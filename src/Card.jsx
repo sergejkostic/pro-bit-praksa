@@ -10,16 +10,19 @@ function Card() {
         <img src='grass.jpg' className='image'/>
       </div>
 
+      <div className='profile-image'>
+      </div>
+
       <div className='card-info'>
         <h1>Ziga Gobec</h1>
-        <p>Sem bivsi igralec CS:GO in se trenutno prijavljam na EPICENTER 21</p>
+        <p>Sem profesionalni programer</p>
       </div>
 
       <div className='user-info'>
 
       </div>
 
-      <div className='button'>
+      <div className='bottom-button'>
 
       </div>
 

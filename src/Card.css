@@ -15,6 +15,16 @@
   height: 200px;
   background-color:black;
 }
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: purple;
+  position: relative;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  margin-left: 150px;
+}
 
 .image {
   width: 400px;
@@ -23,16 +33,17 @@
 }
 
 .card-info {
+  min-height: 140px;
   background-color: yellow;
   padding: 2rem;
 }
 
 .user-info {
-  min-height: 70px;
+  min-height: 100px;
   background-color: aqua;
 }
 
-.button {
-  min-height: 50px;
+.bottom-button {
+  min-height: 75px;
   background-color: blueviolet;
 }
