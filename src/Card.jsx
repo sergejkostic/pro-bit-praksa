@@ -30,8 +30,8 @@ function Card() {
         </div>
       </div>
 
-      <div className='follow-button'>
-        <p className='follow-text'>Follow</p>
+      <div className='follow-button_area'>
+        <button className='follow_button'>Follow</button>
       </div>
     </div>
   )
