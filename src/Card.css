@@ -20,6 +20,10 @@
   margin-left: 150px;
 }
 
+.background_image_cover {
+  height: 200px;
+}
+
 .background_image {
   width: 400px;
   height: 200px;
@@ -72,13 +76,10 @@
 }
 
 .profile_picture {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin-top: -75px;
-  margin-bottom: -75px;
-  margin-left:125px;
-  margin-right:125px;
+
+  width: 100px;
+  height: 100px;
+
 }
 
 p {

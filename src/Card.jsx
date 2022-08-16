@@ -6,12 +6,12 @@ function Card() {
 
   return (
     <div className='card'>
-      <div>
+      <div className='background_image_cover'>
         <img src='grass.jpg' className='background_image' />
       </div>
 
       <div className='profile-image-cover'>
-        <img src='profile-picture.png' className='profile_picture'/>
+        <img src='profile_picture.jpg' className='profile_picture'/>
       </div>
 
       <div className='user_info'>
