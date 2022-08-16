@@ -6,7 +6,12 @@ function Card() {
 
   return (
     <div className="Card">
-      
+      <div className="Cover">
+        <img src="grass.jpg"/>
+      </div>
+      <div>
+        <p1>Ziga Jaka Gobec</p1>
+      </div>
     </div>
   )
 }
