@@ -7,15 +7,13 @@
 
 .card {
   width: 400px;
-  border-radius: 25px;
 }
 
 .picture-cover {
   width: 400px;
   height: 200px;
-  background-color:black;
 }
-.profile-image {
+.profile-image-cover {
   width: 100px;
   height: 100px;
   border-radius: 100px;
@@ -30,20 +28,55 @@
   width: 400px;
   height: 200px;
   align-self: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .card-info {
   min-height: 140px;
-  background-color: yellow;
   padding: 2rem;
 }
 
-.user-info {
-  min-height: 100px;
-  background-color: aqua;
+.followings {
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.followers-info {
+  min-height: 50px;
+  width: 200px;
+  margin: 1px;
+  border: 1px;
+  border: 1px solid black;
+}
+
+.followers-info-2 {
+  min-height: 50px;
+  width: 200px;
+  margin: 1px;
+  border: 1px solid black;
 }
 
 .bottom-button {
-  min-height: 75px;
-  background-color: blueviolet;
+  min-height: 50px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.follow-text {
+  color: white;
+}
+
+.text {
+  color: black;
+  font-weight: 2px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
