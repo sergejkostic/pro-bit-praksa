@@ -9,22 +9,18 @@
   width: 400px;
 }
 
-.picture-cover {
-  width: 400px;
-  height: 200px;
-}
 .profile-image-cover {
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  background-color: purple;
+  background-color: white;
   position: relative;
   margin-top: -50px;
   margin-bottom: -50px;
   margin-left: 150px;
 }
 
-.image {
+.background_image {
   width: 400px;
   height: 200px;
   align-self: center;
@@ -32,7 +28,7 @@
   border-top-right-radius: 30px;
 }
 
-.card-info {
+.user_info {
   min-height: 140px;
   padding: 2rem;
 }
@@ -43,21 +39,21 @@
   flex-direction: row;
 }
 
-.followers-info {
+.followers {
   min-height: 50px;
   width: 200px;
   margin: 1px;
   border: 1px solid black;
 }
 
-.followers-info-2 {
+.following {
   min-height: 50px;
   width: 200px;
   margin: 1px;
   border: 1px solid black;
 }
 
-.bottom-button {
+.follow-button {
   min-height: 50px;
   background-color: green;
   display: flex;
@@ -73,6 +69,16 @@
 .text {
   color: black;
   font-weight: 2px;
+}
+
+.profile_picture {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-top: -75px;
+  margin-bottom: -75px;
+  margin-left:125px;
+  margin-right:125px;
 }
 
 p {
