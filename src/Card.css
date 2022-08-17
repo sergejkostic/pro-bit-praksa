@@ -47,14 +47,13 @@
   min-height: 50px;
   width: 200px;
   margin: 1px;
-  border: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .following {
   min-height: 50px;
   width: 200px;
   margin: 1px;
-  border: 1px solid black;
 }
 
 .follow-button_area {
@@ -83,9 +82,10 @@
 .follow_button {
   width: 400px;
   height: 50px;
-  background-color: green;
+  background-color: lightgreen;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  margin-top: 5px;
 }
 
 p {

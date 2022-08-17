@@ -22,16 +22,16 @@ function Card() {
       <div className='followings'>
         <div className='followers'>
           <p className='text'>Followers</p>
-          <p className='text'>150000</p>
+          <p className='text'>{count}</p>
         </div>
         <div className='following'>
           <p className='text'>Following</p>
-          <p className='text'>150000</p>
+          <p className='text'>0</p>
         </div>
       </div>
 
       <div className='follow-button_area'>
-        <button className='follow_button'>Follow</button>
+        <button className='follow_button' onClick={() => setCount((count) => count + 1)}>Follow</button>
       </div>
     </div>
   )
