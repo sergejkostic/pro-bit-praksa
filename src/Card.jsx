@@ -2,26 +2,39 @@ import { useState } from 'react'
 import './Card.css'
 
 function Card() {
-  const [followers, setFollowers] = useState(1337);
-  const [name, setName] = useState("");
-  const nameChangeHandler = (e) => {
-    setName(e.target.value)
- };
+  const [user, setUser] = useState( 
+    {
+    firstName: "Ziga",
+    lastName: "Gobec",
+    description: "Sem profesionalni programer",
+    location: "Maribor",
+    mail: "ziga.gobec@gmail.com",
+    followers: "1337",
+    following: "12345",
+    background_picture: "grass.jpg",
+    profile_picture: "profile_picture.jpg"
+   }
+  );
 
+  const setRandomUser = () => {
+    let newUser = Object.assign({}, user);
+    newUser.firstName = "sergej"
+    setUser(newUser)
+  }
 
   return (
     <div className='card'>
       <div className='background_image_cover'>
-        <img src='grass.jpg' className='background_image' />
+        <img src={user.background_picture} className='background_image' />
       </div>
 
       <div className='profile-image-cover'>
-        <img src='profile_picture.jpg' className='profile_picture' />
+        <img src={user.profile_picture} className='profile_picture' />
       </div>
 
       <div className='user_info'>
-        <h1>{name}</h1>
-        <p>Sem profesionalni programer</p>
+        <h1>{user.firstName} {user.lastName}</h1>
+        <p>{user.description}</p>
       </div>
 
       <div className='location_mail_area'>
@@ -32,26 +45,25 @@ function Card() {
         <div className='followings-border'></div>
         <div className='mail'>
         <i class="fa-solid fa-envelope"></i>
-          blablamail
+          {user.mail}
         </div>
       </div>
 
       <div className='followings'>
         <div className='followers'>
           <p className='text'>Followers</p>
-          <p className='text'>{followers}</p>
+          <p className='text'>{user.followers}</p>
         </div>
         <div className='followings-border'></div>
         <div className='following'>
           <p className='text'>Following</p>
-          <p className='text'>1234</p>
+          <p className='text'>{user.following}</p>
         </div>
       </div>
 
       <div className='follow-button_area'>
-        <button className='follow_button' onClick={() => setFollowers((followers) => followers + 1)}>Follow</button>
+        <button className='follow_button' onClick={setRandomUser}>Get New User</button>
       </div>
-      <input type='text' required maxLength='20' onChange={nameChangeHandler}/>
     </div>
   )
 }
