@@ -44,12 +44,12 @@
 }
 
 .user_info {
-  height: 140px;
+  height: 200px;
   padding: 2rem;
 }
 
 .location_mail_area {
-  height: 50px;
+  height: 70px;
   background-color: lightgrey;
   position: relative;
   display: flex;
@@ -81,7 +81,7 @@
 }
 
 .followings-border {
-  height: 50px;
+  height: 70px;
   width: 1px;
   background-color: black;
 }
