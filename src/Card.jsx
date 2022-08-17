@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Card.css'
+import axios from 'axios';
 
 function Card() {
   const [user, setUser] = useState( 
@@ -16,11 +17,28 @@ function Card() {
    }
   );
 
-  const setRandomUser = () => {
-    let newUser = Object.assign({}, user);
-    newUser.firstName = "sergej"
-    setUser(newUser)
+
+  const setRandomUser = async () => {
+
+    let data = await axios.get('https://randomuser.me/api/')
+    let jsonData = JSON.parse(data.request.response)
+    console.log(jsonData["results"][0]);
+    let results = jsonData["results"][0];
+
+    setUser({
+      firstName: results.name.first,
+      lastName: results.name.last,
+      description: results.gender,
+      location: results.location,
+      mail: results.email,
+      followers: Math.floor(Math.random() * (100000 - 0 + 1)) + 0,
+      following: Math.floor(Math.random() * (100000 - 0 + 1)) + 0,
+      background_picture: "grass.jpg",
+      profile_picture: results.picture.large
+    })
   }
+
+  
 
   return (
     <div className='card'>
@@ -29,7 +47,7 @@ function Card() {
       </div>
 
       <div className='profile-image-cover'>
-        <img src={user.profile_picture} className='profile_picture' />
+        <img src={`${user.profile_picture}`} className='profile_picture' />
       </div>
 
       <div className='user_info'>
@@ -39,12 +57,12 @@ function Card() {
 
       <div className='location_mail_area'>
         <div className='location'>
-        <i class="fa-solid fa-location-dot"></i>
+        <i className="fa-solid fa-location-dot"></i>
           Maribor
         </div>
         <div className='followings-border'></div>
         <div className='mail'>
-        <i class="fa-solid fa-envelope"></i>
+        <i className="fa-solid fa-envelope"></i>
           {user.mail}
         </div>
       </div>
@@ -66,6 +84,6 @@ function Card() {
       </div>
     </div>
   )
-}
+  }
 
 export default Card
