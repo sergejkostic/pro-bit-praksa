@@ -7,6 +7,6 @@ import Cards from './Cards'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Cards />
+    <Cards count={2} />
   </React.StrictMode>
 )

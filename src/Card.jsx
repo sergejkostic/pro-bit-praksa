@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Card.css'
 import axios from 'axios';
 
-function Card() {
+function Card(props) {
   const [user, setUser] = useState( 
     {
     firstName: "Ziga",
@@ -13,9 +13,9 @@ function Card() {
     followers: "1337",
     following: "12345",
     background_picture: "grass.jpg",
-    profile_picture: "profile_picture.jpg"
-   }
-  );
+    profile_picture: "profile_picture.jpg" 
+   } 
+  ); 
 
 
   const setRandomUser = async () => {
@@ -29,7 +29,7 @@ function Card() {
       firstName: results.name.first,
       lastName: results.name.last,
       description: results.gender,
-      location: results.location,
+      location: results.location.country + ", " + results.location.city,
       mail: results.email,
       followers: Math.floor(Math.random() * (100000 - 0 + 1)) + 0,
       following: Math.floor(Math.random() * (100000 - 0 + 1)) + 0,
@@ -37,8 +37,6 @@ function Card() {
       profile_picture: results.picture.large
     })
   }
-
-  
 
   return (
     <div className='card'>
@@ -58,12 +56,7 @@ function Card() {
       <div className='location_mail_area'>
         <div className='location'>
         <i className="fa-solid fa-location-dot"></i>
-          Maribor
-        </div>
-        <div className='followings-border'></div>
-        <div className='mail'>
-        <i className="fa-solid fa-envelope"></i>
-          {user.mail}
+          {user.location}
         </div>
       </div>
 

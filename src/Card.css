@@ -8,9 +8,9 @@
 .card {
   max-height: 554px;
   width: 400px;
-  box-shadow: 18px 18px 38px -3px rgba(0,0,0,0.75);
   border-radius: 30px;
   margin: 30px;
+  box-shadow: 18px 18px 38px -3px rgba(0,0,0,0.75);
 }
 
 .profile-image-cover {
@@ -44,52 +44,58 @@
 }
 
 .user_info {
-  height: 200px;
+  height: 250px;
   padding: 2rem;
 }
 
 .location_mail_area {
-  height: 70px;
+  min-height: 50px;
   background-color: lightgrey;
   position: relative;
   display: flex;
-  flex-direction: row;
   align-items: center;
   align-content: center;
 }
 
 .location {
   height: 30px;
-  width: 200px;
-}
-
-.mail {
-  height: 30px;
-  width: 200px;
+  width: 400px;
 }
 
 .followings {
-  height: 50px;
+  min-height: 50px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 
 .followers {
-  height: 50px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
   width: 199px;
   margin: 1px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .followings-border {
   height: 70px;
-  width: 1px;
+  width: 2px;
   background-color: black;
 }
 
 .following {
-  height: 50px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
   width: 199px;
   margin: 1px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .follow-button_area {
@@ -107,6 +113,8 @@
 .text {
   color: black;
   font-weight: 2px;
+  align-items: center;
+  align-content: center;
 }
 
 .follow_button {
@@ -121,7 +129,6 @@
 
 p {
   margin: 0;
-  padding: 0;
 }
 
 i {
