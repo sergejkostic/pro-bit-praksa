@@ -45,14 +45,18 @@
 
 .followers {
   min-height: 50px;
-  width: 200px;
+  width: 199px;
   margin: 1px;
-  border-right: 1px solid black;
+}
+.followings-border {
+  min-height: 50px;
+  width: 2px;
+  background-color: black;
 }
 
 .following {
   min-height: 50px;
-  width: 200px;
+  width: 199px;
   margin: 1px;
 }
 

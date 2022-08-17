@@ -24,6 +24,7 @@ function Card() {
           <p className='text'>Followers</p>
           <p className='text'>{count}</p>
         </div>
+        <div className='followings-border'></div>
         <div className='following'>
           <p className='text'>Following</p>
           <p className='text'>0</p>
