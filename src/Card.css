@@ -46,6 +46,26 @@
   padding: 2rem;
 }
 
+.location_mail_area {
+  min-height: 50px;
+  background-color: lightgrey;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.location {
+  min-height: 30px;
+  width: 200px;
+}
+
+.mail {
+  min-height: 30px;
+  width: 200px;
+}
+
 .followings {
   min-height: 50px;
   display: flex;
@@ -100,4 +120,8 @@
 p {
   margin: 0;
   padding: 0;
+}
+
+i {
+  padding-right: 1rem;
 }
