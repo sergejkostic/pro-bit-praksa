@@ -22,6 +22,12 @@
   margin-left: 150px;
 }
 
+.profile_picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
 .background_image_cover {
   height: 200px;
   width: 400px;
@@ -51,6 +57,7 @@
   width: 199px;
   margin: 1px;
 }
+
 .followings-border {
   min-height: 50px;
   width: 1px;
@@ -78,12 +85,6 @@
 .text {
   color: black;
   font-weight: 2px;
-}
-
-.profile_picture {
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
 }
 
 .follow_button {

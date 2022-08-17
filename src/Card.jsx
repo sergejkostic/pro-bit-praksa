@@ -11,7 +11,7 @@ function Card() {
       </div>
 
       <div className='profile-image-cover'>
-        <img src='profile_picture.jpg' className='profile_picture'/>
+        <img src='profile_picture.jpg' className='profile_picture' />
       </div>
 
       <div className='user_info'>
