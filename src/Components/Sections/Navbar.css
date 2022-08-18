@@ -1,7 +1,7 @@
 .Navbar {
     width: 1440px;
     height: 130px;
-    /* background-color: aqua;  */
+    background-color: aqua;  
     position: relative;
     padding-top: 1rem;
     padding-left: 2rem;
@@ -69,13 +69,16 @@
 .Search_bar_input_left {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    height: 39px;
+    height: 45px;
     width: 300px;
+    border: 0px;
+    margin-right: -2px;
 }
 
 .Search_bar_input_right {
-    height: 39px;
+    height: 45px;
     width: 300px;
+    border: 0px;
 }
 
 .search_icon {
@@ -92,10 +95,25 @@
     background-color: red;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    height: 45px;
+    height: 47px;
     width: 50px;
+    align-self: center;
+    border: 0px;
 }
 
 .search_button:hover {
     background-color: lightgrey;
+}
+
+.border_between_input {
+    background-color: grey;
+    width: 2px;
+    height: 30px;
+    align-self: center;
+    opacity: 50%;
+}
+
+input::placeholder {
+    padding: 15px;
+    font-size: 15px;
 }

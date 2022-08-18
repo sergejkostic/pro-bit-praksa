@@ -9,14 +9,14 @@ function Navbar(props) {
             <div className='Logo_space'>
                 <img src='yelpLogo.png'  className='logo'/>
             </div>
-
             <div className='Search_bar_dropdown_menu_holder'> 
                 <div className='Search_bar'>
-                    <form>
-                    <input className='Search_bar_input_left' placeholder='pizza, pub, Shanahans'></input>
+                    {/* <form> */}
+                        <input className='Search_bar_input_left' placeholder='pizza, pub, Shanahans'></input>
+                        <div className='border_between_input'></div>
                         <input className='Search_bar_input_right' placeholder='Dublin'></input>
                         <button className='search_button'><i class="fa-solid fa-magnifying-glass search_icon"></i></button>
-                    </form>
+                    {/* </form> */}
                 </div>
 
 
