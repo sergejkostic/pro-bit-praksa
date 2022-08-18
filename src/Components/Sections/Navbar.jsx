@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Navbar.css'
 import Button from '../General/Button.jsx'
 import LIButton from '../General/LogInButton'
+import Dropdown from '../General/Dropdown'
 
 function Navbar(props) {
     return (
@@ -27,16 +28,16 @@ function Navbar(props) {
 
                 <div className='Dropdown_menu_holder'>
                 <div className='Dropdown_menu'>
-                    <span className='Dropdown_menu_span'>Restaurants</span>
+                    <Dropdown text="Restaurants" data={["Delivery", "Burgers", "Chinese", "Italian", "Reservation", "Japanese", "Mexican", "Thai"]}/>
                 </div>
                 <div className='Dropdown_menu'>
-                    <span className='Dropdown_menu_span'>Home services</span>
+                    <Dropdown text="Home Services" data={["Congractors", "Electricians", "Home cleaners", "HVAC", "Landscaping", "Locksmiths", "Movers", "Plumbers"]}/>
                 </div>
                 <div className='Dropdown_menu'>
-                    <span className='Dropdown_menu_span'>Auto services</span>
+                    <Dropdown text="Auto Services" data={["Auto Repair", "Auto Detailing", "Body Shops", "Car Wash", "Car Dealers", "Oil Change", "Parking", "Towing"]}/>
                 </div>
-                <div className='Dropdown_menu'>
-                    <span className='Dropdown_menu_span'>More</span>
+                <div className='Dropdown_menu' data={["Delivery", "Burgers", "Chinese", "Italian", "Reservation", "Japanese", "Mexican", "Thai"]}>
+                    <Dropdown text="More"/>
                 </div>
                 </div>
             </div> 
