@@ -19,7 +19,6 @@ function Navbar(props) {
                     {/* </form> */}
                 </div>
 
-
                 <div className='Dropdown_menu_holder'>
                 <div className='Dropdown_menu'>
                     <Dropdown text="Restaurants" data={["Delivery", "Burgers", "Chinese", "Italian", "Reservation", "Japanese", "Mexican", "Thai"]}/>
