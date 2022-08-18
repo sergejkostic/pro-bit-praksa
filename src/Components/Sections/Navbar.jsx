@@ -14,15 +14,11 @@ function Navbar(props) {
 
             <div className='Search_bar_dropdown_menu_holder'> 
                 <div className='Search_bar'>
-                    <div className='Search_bar_food'>
-                        <input placeholder='pizza, pub...'></input>
-                    </div>
-                    <div className='Search_bar_food_location'>
-                        <input placeholder='Dublin...'></input>
-                    </div>
-                    <div className='Search_bar_search_button'>
-
-                    </div>
+                    <form>
+                    <input className='Search_bar_input_left' placeholder='pizza, pub, Shanahanas'></input>
+                        <input className='Search_bar_input_right' placeholder='Dublin'></input>
+                        <button className='search_button'><i class="fa-solid fa-magnifying-glass search_icon"></i></button>
+                    </form>
                 </div>
 
 
@@ -37,7 +33,7 @@ function Navbar(props) {
                     <Dropdown text="Auto Services" data={["Auto Repair", "Auto Detailing", "Body Shops", "Car Wash", "Car Dealers", "Oil Change", "Parking", "Towing"]}/>
                 </div>
                 <div className='Dropdown_menu' >
-                    <Dropdown text="More" data={["Dry Cleaning", "Phone Repair", "Bars", "Nightlife", "Hair Salons", "Gyms", "Massage", "Shopping"]}/>
+                    <Dropdown text="More" data={["Dry Cleaning", "Phone Repair", "Bars", "Nightlife", "Hair Salons", "Gyms", "Massage", "Thai"]}/>
                 </div>
                 </div>
             </div> 
@@ -46,7 +42,7 @@ function Navbar(props) {
                 <div><Button text="For Businesses" type="left"></Button></div>
                 <div><Button text="Write A Review" type="left"></Button></div>
                 <div><LIButton keyText="Log In"></LIButton></div>
-                <div><LIButton keyText="Sign Up"></LIButton></div>
+                <div><LIButton keyText="Sign Up" type="posebni"></LIButton></div>
             </div>
 
         </div>

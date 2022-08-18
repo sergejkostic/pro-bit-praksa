@@ -1,9 +1,9 @@
 .Navbar {
     width: 1440px;
     height: 130px;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: relative;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
     display: flex;
@@ -25,39 +25,39 @@
 .Search_bar_dropdown_menu_holder {
     width: 440px;
     height: 130px;
-    background-color: brown;
+    /* background-color: brown; */
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 100px;
 }
 
 .Search_bar {
-    background-color: black;
+    /* background-color: black; */
     height: 50px;
-    width: 440px;
+    width: 800px;
     display: flex;
     flex-direction: row;
 }
 
 .Search_bar_food {
-    background-color: green;
+    /* background-color: green; */
     height: 100%;
     width: 195px;
 }
 
 .Search_bar_food_location {
-    background-color: red;
+    /* background-color: red; */
     width: 195px;
 }
 
 .Search_bar_search_button {
-    background-color: orange;
+    /* background-color: orange; */
     height: 100%;
     width: 50px;
 }
 
 .Dropdown_menu_holder {
-    background-color: grey;
+    /* background-color: grey;  */
     width: 700px;
     height: 93.9px;
     display: flex;
@@ -65,8 +65,8 @@
 }
 
 .Dropdown_menu {
-    margin: 20px;
-    margin-left: 40px;
+    margin: 10px;
+    margin-left: 20px;
 }
 
 .Dropdown_menu_span {
@@ -77,7 +77,38 @@
 .Button_holder {
     display: flex;
     flex-direction: row;
-    background-color: firebrick;
+    /* background-color: firebrick; */
     height: 30px;
     width: 100%;
+    padding-left: 350px;
+}
+
+.Search_bar_input_left {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 39px;
+    width: 350px;
+}
+
+.Search_bar_input_right {
+    height: 39px;
+    width: 350px;
+}
+
+.search_icon {
+    /* background-color: red; */
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    margin-right: 9px;
+    color: white;
+}
+
+.search_button {
+    padding-bottom: 0.4rem;
+    background-color: red;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 44px;
+    width: 50px;
 }
