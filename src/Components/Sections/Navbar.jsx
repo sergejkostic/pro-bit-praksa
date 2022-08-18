@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './Navbar.css'
+import Button from '../General/Button.jsx'
+import LIButton from '../General/LogInButton'
 
 function Navbar(props) {
     return (
@@ -38,6 +40,14 @@ function Navbar(props) {
                 </div>
                 </div>
             </div> 
+
+            <div className='Button_holder'>
+                <div><Button text="For Businesses" type="left"></Button></div>
+                <div><Button text="Write A Review" type="left"></Button></div>
+                <div><LIButton keyText="Log In"></LIButton></div>
+                <div><LIButton keyText="Sign Up"></LIButton></div>
+            </div>
+
         </div>
       )
 }

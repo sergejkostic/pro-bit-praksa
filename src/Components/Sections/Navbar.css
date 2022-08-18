@@ -70,10 +70,17 @@
     width: 150px;
     margin: 20px;
     margin-left: 40px;
-    margin-right: 40px;
 }
 
 .Dropdown_menu_span {
     width: 10px;
     height: 10px;
+}
+
+.Button_holder {
+    display: flex;
+    flex-direction: row;
+    background-color: firebrick;
+    height: 30px;
+    width: 100%;
 }

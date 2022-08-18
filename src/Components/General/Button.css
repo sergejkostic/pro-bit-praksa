@@ -1,0 +1,10 @@
+.Button {
+    background-color: green;
+    margin-left: 50px;
+    width: 150px;
+    height: 25px;
+}
+
+.Button:hover {
+    background-color: blue;
+}
