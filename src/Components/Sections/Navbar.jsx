@@ -39,10 +39,10 @@ function Navbar(props) {
             </div> 
 
             <div className='Button_holder'>
-                <div><Button text="For Businesses" type="left"></Button></div>
-                <div><Button text="Write A Review" type="left"></Button></div>
-                <div><LIButton keyText="Log In"></LIButton></div>
-                <div><LIButton keyText="Sign Up" type="posebni"></LIButton></div>
+                <div><Button text="For Businesses" ></Button></div>
+                <div><Button text="Write A Review" ></Button></div>
+                <div><LIButton text="Log In"></LIButton></div>
+                <div><LIButton text="Sign Up" type="posebni"></LIButton></div>
             </div>
 
         </div>
