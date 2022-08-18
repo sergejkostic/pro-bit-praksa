@@ -1,17 +1,17 @@
 .Navbar {
-    width: 1440px;
     height: 130px;
-    background-color: aqua;  
     position: relative;
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     display: flex;
     flex-direction: row;
+    padding-top: 1rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    box-shadow: 0px 120px 20px 0px rgba(0, 0, 0, 0.3) inset;
 }
 
 .Logo_space {
-    width: 150px;
+    width: 80px;
     height: 65px;
     display: flex;
     position: relative;
@@ -25,14 +25,12 @@
 .Search_bar_dropdown_menu_holder {
     width: 440px;
     height: 130px;
-    /* background-color: brown; */
     display: flex;
     flex-direction: column;
     margin-left: 100px;
 }
 
 .Search_bar {
-    /* background-color: black; */
     height: 50px;
     width: 800px;
     display: flex;
@@ -40,7 +38,6 @@
 }
 
 .Dropdown_menu_holder {
-    /* background-color: grey;  */
     width: 700px;
     height: 93.9px;
     display: flex;
@@ -60,10 +57,8 @@
 .Button_holder {
     display: flex;
     flex-direction: row;
-    /* background-color: firebrick; */
     height: 30px;
-    width: 100%;
-    margin-left: 250px;
+    margin-left: 270px;
 }
 
 .Search_bar_input_left {
@@ -82,7 +77,6 @@
 }
 
 .search_icon {
-    /* background-color: red; */
     width: 10px;
     height: 10px;
     font-size: 20px;
