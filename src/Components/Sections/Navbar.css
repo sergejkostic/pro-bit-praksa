@@ -80,7 +80,7 @@
     /* background-color: firebrick; */
     height: 30px;
     width: 100%;
-    padding-left: 350px;
+    margin-left: 350px;
 }
 
 .Search_bar_input_left {
@@ -111,4 +111,8 @@
     border-bottom-right-radius: 8px;
     height: 44px;
     width: 50px;
+}
+
+.search_button:hover {
+    background-color: lightgrey;
 }
