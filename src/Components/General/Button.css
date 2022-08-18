@@ -1,0 +1,39 @@
+.Button {
+    background-color: transparent;
+    border: 0px;
+    margin-left: 20px;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.Button:hover {
+    background-color: lightgrey;
+}
+
+.LIButton:hover {
+    background-color: lightgrey;
+}
+
+.LIButton {
+    background-color: transparent;
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 14;
+    border-radius: 5px;
+}
+
+.LIButton_posebni_red {
+    background-color: red; 
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 14;
+    border-radius: 5px;
+}
+
+.LIButton_posebni_red:hover {
+    background-color: lightgrey;
+}
