@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import './Navbar.css'
 import Button from '../General/Button.jsx'
-import LIButton from '../General/LogInButton'
 import Dropdown from '../General/Dropdown'
 
 function Navbar(props) {
     return (
         <div className="Navbar">
-
             <div className='Logo_space'>
                 <img src='yelpLogo.png'  className='logo'/>
             </div>
@@ -41,8 +39,8 @@ function Navbar(props) {
             <div className='Button_holder'>
                 <div><Button text="For Businesses" ></Button></div>
                 <div><Button text="Write A Review" ></Button></div>
-                <div><LIButton text="Log In"></LIButton></div>
-                <div><LIButton text="Sign Up" type="posebni"></LIButton></div>
+                <div><Button text="Log In" type="posebni_trans" ></Button></div>
+                <div><Button text="Sign Up" type="posebni_red" ></Button></div> 
             </div>
 
         </div>
