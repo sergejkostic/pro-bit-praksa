@@ -10,8 +10,6 @@ function App() {
 		<div className='main_container'>
 			<div className="header_container">
 				<Navbar />
-
-				<div><p>blbablalbal</p></div>
 			</div>
 		</div>
 	)
