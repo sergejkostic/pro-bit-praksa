@@ -36,8 +36,8 @@ function Navbar(props) {
                 <div className='Dropdown_menu'>
                     <Dropdown text="Auto Services" data={["Auto Repair", "Auto Detailing", "Body Shops", "Car Wash", "Car Dealers", "Oil Change", "Parking", "Towing"]}/>
                 </div>
-                <div className='Dropdown_menu' data={["Delivery", "Burgers", "Chinese", "Italian", "Reservation", "Japanese", "Mexican", "Thai"]}>
-                    <Dropdown text="More"/>
+                <div className='Dropdown_menu' >
+                    <Dropdown text="More" data={["Dry Cleaning", "Phone Repair", "Bars", "Nightlife", "Hair Salons", "Gyms", "Massage", "Shopping"]}/>
                 </div>
                 </div>
             </div> 
