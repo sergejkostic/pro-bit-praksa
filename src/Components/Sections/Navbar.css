@@ -1,0 +1,49 @@
+.Navbar {
+    width: 1440px;
+    height: 130px;
+    background-color: aqua;
+    position: relative;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.Logo_space {
+    width: 150px;
+    height: 65px;
+    display: flex;
+    position: relative;
+}
+
+.Logo {
+    height: 100%;
+    width: 100%;
+}
+
+.Search_bar {
+    background-color: black;
+    height: 50px;
+    width: 440px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Search_bar_food {
+    background-color: green;
+    height: 100%;
+    width: 195px;
+}
+
+.Search_bar_food_location {
+    background-color: red;
+    width: 195px;
+}
+
+.Search_bar_search_button {
+    background-color: orange;
+    height: 100%;
+    width: 50px;
+}
