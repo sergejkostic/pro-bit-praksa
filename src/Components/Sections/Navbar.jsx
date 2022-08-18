@@ -9,10 +9,20 @@ function Navbar(props) {
                 <img src='yelpLogo.png'  className='logo'/>
             </div>
 
-            <div className='Search_bar'>
-                <div className='Search_bar_food'></div>
-                <div className='Search_bar_food_location'></div>
-                <div className='Search_bar_search_button'></div>
+            <div className='Search_bar_dropdown_menu_holder'>
+                <div className='Search_bar'>
+                    <div className='Search_bar_food'></div>
+                    <div className='Search_bar_food_location'></div>
+                    <div className='Search_bar_search_button'></div>
+                </div>
+
+                <div className='Dropdown_menu_holder'></div>
+                <div className='Dropdown_menu'>
+                    <span className='Dropdown_menu_span'></span>
+                </div>
+                <div className='Dropdown_menu'></div>
+                <div className='Dropdown_menu'></div>
+                <div className='Dropdown_menu'></div>
             </div>
         </div>
       )

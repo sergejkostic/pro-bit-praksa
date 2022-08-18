@@ -22,11 +22,19 @@
     width: 100%;
 }
 
+.Search_bar_dropdown_menu_holder {
+    width: 440px;
+    height: 130px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
 .Search_bar {
     background-color: black;
     height: 50px;
     width: 440px;
-    margin-left: 40px;
     display: flex;
     flex-direction: row;
 }
@@ -46,4 +54,21 @@
     background-color: orange;
     height: 100%;
     width: 50px;
+}
+
+.Dropdown_menu_holder {
+    background-color: grey;
+    width: 600px;
+    height: 93.9px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Dropdown_menu {
+    background-color: magenta; 
+}
+
+.Dropdown_menu_span {
+    width: 50px;
+    height: 50px;
 }
