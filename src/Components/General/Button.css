@@ -6,7 +6,6 @@
     height: 40px;
     border-radius: 5px;
     font-size: 14px;
-
 }
 
 .Button:hover {
@@ -16,9 +15,6 @@
 .LIButton:hover {
     background-color: lightgrey;
 }
-
-
-
 
 .LIButton {
     background-color: transparent;

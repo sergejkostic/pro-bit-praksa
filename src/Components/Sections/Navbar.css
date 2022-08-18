@@ -1,7 +1,7 @@
 .Navbar {
     width: 1440px;
     height: 130px;
-    /* background-color: aqua; */
+    /* background-color: aqua;  */
     position: relative;
     padding-top: 1rem;
     padding-left: 2rem;
@@ -39,23 +39,6 @@
     flex-direction: row;
 }
 
-.Search_bar_food {
-    /* background-color: green; */
-    height: 100%;
-    width: 195px;
-}
-
-.Search_bar_food_location {
-    /* background-color: red; */
-    width: 195px;
-}
-
-.Search_bar_search_button {
-    /* background-color: orange; */
-    height: 100%;
-    width: 50px;
-}
-
 .Dropdown_menu_holder {
     /* background-color: grey;  */
     width: 700px;
@@ -80,19 +63,19 @@
     /* background-color: firebrick; */
     height: 30px;
     width: 100%;
-    margin-left: 350px;
+    margin-left: 250px;
 }
 
 .Search_bar_input_left {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     height: 39px;
-    width: 350px;
+    width: 300px;
 }
 
 .Search_bar_input_right {
     height: 39px;
-    width: 350px;
+    width: 300px;
 }
 
 .search_icon {

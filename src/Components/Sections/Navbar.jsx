@@ -13,7 +13,7 @@ function Navbar(props) {
             <div className='Search_bar_dropdown_menu_holder'> 
                 <div className='Search_bar'>
                     <form>
-                    <input className='Search_bar_input_left' placeholder='pizza, pub, Shanahanas'></input>
+                    <input className='Search_bar_input_left' placeholder='pizza, pub, Shanahans'></input>
                         <input className='Search_bar_input_right' placeholder='Dublin'></input>
                         <button className='search_button'><i class="fa-solid fa-magnifying-glass search_icon"></i></button>
                     </form>
@@ -25,7 +25,7 @@ function Navbar(props) {
                     <Dropdown text="Restaurants" data={["Delivery", "Burgers", "Chinese", "Italian", "Reservation", "Japanese", "Mexican", "Thai"]}/>
                 </div>
                 <div className='Dropdown_menu'>
-                    <Dropdown text="Home Services" data={["Congractors", "Electricians", "Home cleaners", "HVAC", "Landscaping", "Locksmiths", "Movers", "Plumbers"]}/>
+                    <Dropdown text="Home Services" data={["Contractors", "Electricians", "Home Cleaners", "HVAC", "Landscaping", "Locksmiths", "Movers", "Plumbers"]}/>
                 </div>
                 <div className='Dropdown_menu'>
                     <Dropdown text="Auto Services" data={["Auto Repair", "Auto Detailing", "Body Shops", "Car Wash", "Car Dealers", "Oil Change", "Parking", "Towing"]}/>
