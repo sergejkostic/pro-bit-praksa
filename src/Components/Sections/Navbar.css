@@ -33,6 +33,7 @@
     width: 800px;
     display: flex;
     flex-direction: row;
+    z-index: 10;
 }
 
 .Dropdown_menu_holder {
@@ -57,6 +58,7 @@
     flex-direction: row;
     height: 30px;
     margin-left: 270px;
+    z-index: 10;
 }
 
 .Search_bar_input_left {
