@@ -10,9 +10,9 @@ let link = []
     }
 
     return (
-        <div class="dropdown">
-            <button class="dropbtn">{props.text}</button>
-            <div class="dropdown-content">
+        <div className="dropdown">
+            <button className="dropbtn">{props.text}</button>
+            <div className="dropdown-content">
                 {link}
             </div>
         </div>

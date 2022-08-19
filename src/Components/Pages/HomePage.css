@@ -1,0 +1,9 @@
+.main_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header_container {
+    height: 446px;
+  }

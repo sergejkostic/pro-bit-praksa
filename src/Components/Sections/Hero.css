@@ -1,0 +1,13 @@
+.hero_container {
+    display: flex;
+    height: 500px;
+    padding-left: 205px;
+    margin-top: calc(calc(130px + 2rem) * -1);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 55%), url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/65e6a224ada4/assets/img/home/hero_photos/cz8iYo13MpBBGlFLlkA8Sw.jpg);
+}
+
+.hero_title {
+    color: white;
+    font-weight: 900;
+    margin-top: 250px;
+}

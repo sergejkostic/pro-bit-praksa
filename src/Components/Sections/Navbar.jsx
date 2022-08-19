@@ -21,7 +21,7 @@ function Navbar(props) {
 							placeholder="Dublin"
 						></input>
 						<button className="search_button">
-							<i class="fa-solid fa-magnifying-glass search_icon"></i>
+							<i className="fa-solid fa-magnifying-glass search_icon"></i>
 						</button>
 					</form>
 
