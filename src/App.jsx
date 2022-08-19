@@ -1,13 +1,29 @@
 import { useState } from 'react'
 import './App.css'
-import HomePage from './Components/Pages/HomePage'
+import Navbar from './Components/Sections/Navbar'
+import {
+	BrowserRouter,
+	Routes,
+	Route,
+  } from "react-router-dom";
+  import HomePage from './Components/Pages/HomePage';
+  import HelpPage from './Components/Pages/HelpPage';
+  import UserPage from './Components/Pages/UserPage';
 
 function App() {
-	const [count, setCount] = useState(0)
 
 	return (
-		<HomePage/>
-	)
+		<>
+		<BrowserRouter>
+		<Navbar/>
+		<Routes>
+		<Route path="/" element={<HomePage />}/>		
+		  <Route path="/test" element={<HelpPage />}/>
+		  <Route path="/user" element={<UserPage />}/>
+		</Routes>
+	  </BrowserRouter>
+	  </>
+	);
 }
 
 export default App;

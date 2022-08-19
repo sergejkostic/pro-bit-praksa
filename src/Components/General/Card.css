@@ -5,14 +5,18 @@
     flex-direction: column;
     background-color: #eee;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
 }
 
 .card-image {
-    width: 100%;
+    width: 50%;
+    height: 100px;
 }
 
 .card-header {
     padding: 10px;
+}
+.card-content {
+    display: flex;
+    justify-content: center;
 }
 

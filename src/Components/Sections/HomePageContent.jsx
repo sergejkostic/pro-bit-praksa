@@ -1,65 +1,43 @@
 import "./HomePageContent.css";
 import Card from "../General/Card";
+import { Navigate, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { getUsers } from '../../helper/api';
 
-
-const card_data = [
-    {
-        'header': 'Prva Karta',
-        'content': 'description...',
-        'date': new Date(),
-        'image': 'https://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg?w=640'
-    },
-    
-    {
-        'header': 'Druga Karta',
-        'content': 'description...',
-        'date': new Date(),
-        'image': 'https://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg?w=640'
-    },
-    {
-        'header': 'Tretja Karta',
-        'content': 'description...',
-        'date': new Date(),
-        'image': 'https://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg?w=640'
-    },
-    
-    {
-        'header': 'Cetrta Karta',
-        'content': 'description...',
-        'date': new Date(),
-        'image': 'https://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg?w=640'
-    },
-    
-    {
-        'header': 'Peta Karta',
-        'content': 'description...',
-        'date': new Date(),
-        'image': 'https://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg?w=640'
-    },
-    
-    {
-        'header': 'Sesta Karta',
-        'content': 'description...',
-        'date': new Date(),
-        'image': 'https://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg?w=640'
-    },
-    {
-        'header': 'Sedma Karta',
-        'content': 'description...',
-        'date': new Date(),
-        'image': 'https://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg?w=640'
-    },
-]
 
 
 function HomePageContent(props) {
+    const navigate = useNavigate();
+
+    const [users, setUsers] = useState([]);
+    const getData = async () => {
+        const data = await getUsers();
+        setUsers(data);
+        console.log(data);
+    }
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+    const showUserData = () => {
+        navigate('/user');
+    }
+
     return (
         <div className="homepage-content">
             <h1>Recent Activity</h1>
             <div className="cards-container">
-                {card_data.map((card_data, index) => (
-                    <Card  key={index} {...card_data}/>
-                ))}
+                {users.map((user, index) => {
+                    const cardData = {
+                        image: user.avatar,
+                        header: `${user.first_name} ${user.last_name}`,
+                        date: new Date(user.date_of_birth)
+                    };
+                    return (
+                        <Card key={index} {...cardData} onClickFunction={showUserData} />
+                    )
+                })};
             </div>
 
         </div>
