@@ -9,40 +9,9 @@ import {
   TODO_EDIT,
 } from "./../actions/types";
 
-const temp = [
-  {
-    title: "Jaka",
-    description: "Ziga",
-    ident: uuid(),
-    date_created: new Date().toJSON(),
-    done: false,
-  },
-  {
-    title: "Sergej",
-    description: "Kostic",
-    ident: uuid(),
-    date_created: new Date().toJSON(),
-    done: true,
-  },
-  {
-    title: "Luka",
-    description: "Slapnik",
-    ident: uuid(),
-    date_created: new Date().toJSON(),
-    done: false,
-  },
-  {
-    title: "Domen",
-    description: "Jakopic",
-    ident: uuid(),
-    date_created: new Date().toJSON(),
-    done: true,
-  },
-];
-
 const initialState = {
-  todoData: temp,
-  _allTodoData: temp,
+  todoData: [],
+  _allTodoData: [],
   todoModalVisible: false,
   search: "",
 };
