@@ -1,13 +1,19 @@
 import { SHOW_TODO_MODAL, TODO_CHANGE_SEARCH } from "../actions/types";
-import { useDispatch } from "react-redux";
-import { useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useRef, useEffect } from "react";
 
 function Navbar() {
+  const searchInput = useSelector((state) => state.todo.search);
+  const searchRef = useRef(null);
   const dispatch = useDispatch();
-  const updateSearch = event => {
+  const updateSearch = (event) => {
     event.preventDefault();
     dispatch({ type: TODO_CHANGE_SEARCH, payload: event.target.value });
-  }
+  };
+
+  useEffect(() => {
+    searchRef.current.value = searchInput;
+  }, []);
 
   return (
     <nav className="navbar navbar-light bg-light">
@@ -29,6 +35,7 @@ function Navbar() {
             aria-label="Search"
             aria-describedby="search-addon"
             onChange={(event) => updateSearch(event)}
+            ref={searchRef}
           />
           <span className="input-group-text border-0" id="search-addon">
             <i className="fas fa-search"></i>

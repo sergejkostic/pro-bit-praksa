@@ -35,4 +35,9 @@ nav>.container-fluid,
         width: 100%;
     }
 
+    .row {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
 }
