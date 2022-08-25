@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Card from "./Card";
-import AddTodoModal from "./Modals/AddTodoModal";
+import Card from "../Components/Card";
+import AddTodoModal from "../Components/Modals/AddTodoModal";
 import { useSelector } from "react-redux";
 
 function Homepage() {

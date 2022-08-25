@@ -4,3 +4,5 @@ export function uuid() {
         return v.toString(16);
     });
 }
+
+export const BASE = "/pro-bit-praksa/";
