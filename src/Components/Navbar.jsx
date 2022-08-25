@@ -31,15 +31,7 @@ function Navbar() {
           onClick={() => navigate(BASE)}
         />
         <form className="d-flex input-group w-auto">
-          <button
-            type="button"
-            className="btn btn-primary me-3"
-            style={{ height: 35.27, borderRadius: 5 }}
-            onClick={() => dispatch({ type: SHOW_TODO_MODAL })}
-          >
-            Add Todo
-          </button>
-          <input
+        <input
             type="search"
             className="form-control rounded"
             placeholder="Search"
@@ -51,6 +43,15 @@ function Navbar() {
           <span className="input-group-text border-0" id="search-addon">
             <i className="fas fa-search"></i>
           </span>
+          <button
+            type="button"
+            className="btn btn-primary me-3"
+            style={{ marginLeft: 25, height: 35.27, borderRadius: 5 }}
+            onClick={() => dispatch({ type: SHOW_TODO_MODAL })}
+          >
+            Add Todo
+          </button>
+
           <button
             type="button"
             className="btn btn-danger me-3"
