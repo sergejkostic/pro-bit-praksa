@@ -6,3 +6,4 @@ export function uuid() {
 }
 
 export const BASE = "/pro-bit-praksa/";
+export const API_BASE = "http://localhost:5000/api/v1/";
