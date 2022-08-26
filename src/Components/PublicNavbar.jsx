@@ -1,4 +1,4 @@
-import { SHOW_TODO_MODAL, TODO_CHANGE_SEARCH } from "../actions/types";
+import { SHOW_POST_MODAL, TODO_CHANGE_SEARCH } from "../actions/types";
 import { useDispatch, useSelector } from "react-redux";
 import { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -6,7 +6,7 @@ import { BASE } from "../utils";
 
 function PublicNavbar() {
   const navigate = useNavigate();
-  const searchInput = useSelector((state) => state.todo.search);
+  const searchInput = useSelector((state) => state.post.search);
   const searchRef = useRef(null);
   const dispatch = useDispatch();
   const updateSearch = (event) => {

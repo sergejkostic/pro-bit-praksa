@@ -1,7 +1,7 @@
 import { uuid } from "../utils";
 import {
-  HIDE_TODO_MODAL,
-  SHOW_TODO_MODAL,
+  HIDE_POST_MODAL,
+  SHOW_POST_MODAL,
   TODO_ADD,
   TODO_CHANGE_SEARCH,
   TODO_CHANGE_STATUS,
@@ -27,9 +27,9 @@ const updateWithVisible = (state) => {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case HIDE_TODO_MODAL:
+    case HIDE_POST_MODAL:
       return { ...state, todoModalVisible: false };
-    case SHOW_TODO_MODAL:
+    case SHOW_POST_MODAL:
       return { ...state, todoModalVisible: true };
     case TODO_ADD:
       return updateWithVisible({

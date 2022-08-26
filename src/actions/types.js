@@ -1,5 +1,5 @@
-export const SHOW_TODO_MODAL = "SHOW_TODO_MODAL";
-export const HIDE_TODO_MODAL = "HIDE_TODO_MODAL";
+export const SHOW_POST_MODAL = "SHOW_POST_MODAL";
+export const HIDE_POST_MODAL = "HIDE_POST_MODAL";
 
 export const TODO_ADD = "TODO_ADD";
 export const TODO_DELETE = "TODO_DELETE";
@@ -16,3 +16,10 @@ export const USER_LOGIN_FAILURE = "USER_LOGIN_FAILURE";
 
 export const USER_LOGOUT = "USER_LOGOUT";
 
+export const GET_POSTS_START = "GET_POSTS_START";
+export const GET_POSTS_SUCCESS = "GET_POSTS_SUCCESS";
+export const GET_POSTS_FAILURE = "GET_POSTS_FAILURE";
+
+export const ADD_POST_START = "ADD_POST_START"
+export const ADD_POST_SUCCESS = "ADD_POST_SUCCESS"
+export const ADD_POST_FAILURE = "ADD_POST_FAILURE"
