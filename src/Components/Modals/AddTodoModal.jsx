@@ -74,6 +74,7 @@ function AddTodoModal() {
       .catch(function (error) {
         alert('napaka');
         dispatch({ type: ADD_POST_FAILURE });
+        dispatch({ type: HIDE_POST_MODAL });
       });
   };
 

@@ -1,63 +1,23 @@
-import { TODO_DELETE, TODO_CHANGE_STATUS } from "../actions/types";
-import { useDispatch } from "react-redux";
-
-const CheckStatus = ({ done, dispatch, ident }) => {
-  if (done) {
-    return (
-      <i
-        onClick={() => dispatch({ type: TODO_CHANGE_STATUS, payload: {ident, done: false} })}
-        className="fas fa-check-square fa-3x"
-        style={{ color: "green" }}
-      ></i>
-    );
-  }
-  return (
-    <i
-      onClick={() => dispatch({ type: TODO_CHANGE_STATUS, payload: {ident, done: true} })}
-      className="far fa-check-square fa-3x"
-    ></i>
-  );
-};
-
-function Card({ title, description, date_created, ident, done }) {
-  const date = new Date(date_created);
-  const dispatch = useDispatch();
+function Card({ title, content, date, name, image }) {
+  const dateObj = new Date(date);
 
   return (
     <div className="col-xl-4 col-lg-6 mb-4">
       <div className="card">
+        <img
+          src={
+            image
+              ? image
+              : "https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+          }
+          className="card-img-top"
+          alt="Fissure in Sandstone"
+          style={{ width: '100%', objectFit: 'cover', height: 200}}
+        />
         <div className="card-body">
-          <div className="d-flex justify-content-between align-items-center">
-            <div className="d-flex align-items-center">
-              <CheckStatus done={done} ident={ident} dispatch={dispatch} />
-              <div className="ms-3">
-                <p className="fw-bold mb-1">{title}</p>
-                <p className="text-muted mb-0">{description}</p>
-              </div>
-            </div>
-            <span className="badge rounded-pill badge-success">
-              {date.toLocaleDateString()}
-            </span>
-          </div>
-        </div>
-        <div className="card-footer border-0 bg-light p-2 d-flex justify-content-around">
-          <a
-            className="btn btn-link m-0 text-reset"
-            href="#"
-            role="button"
-            data-ripple-color="primary"
-          >
-            Edit<i className="fas fa-edit ms-2"></i>
-          </a>
-          <a
-            className="btn btn-link m-0 text-reset"
-            href="#"
-            role="button"
-            data-ripple-color="primary"
-            onClick={() => dispatch({ type: TODO_DELETE, payload: ident })}
-          >
-            Delete<i className="fas fa-trash ms-2"></i>
-          </a>
+          <h5 className="card-title">{title}</h5>
+          <h6 className="card-subtitle mb-2 text-muted">{name} - {dateObj.toLocaleDateString()}</h6>
+          <p className="card-text">{content}</p>
         </div>
       </div>
     </div>
