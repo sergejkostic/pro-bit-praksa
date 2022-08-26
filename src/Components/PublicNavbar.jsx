@@ -1,4 +1,4 @@
-import { SHOW_POST_MODAL, TODO_CHANGE_SEARCH } from "../actions/types";
+import { SHOW_POST_MODAL, POST_CHANGE_SEARCH } from "../actions/types";
 import { useDispatch, useSelector } from "react-redux";
 import { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ function PublicNavbar() {
   const dispatch = useDispatch();
   const updateSearch = (event) => {
     event.preventDefault();
-    dispatch({ type: TODO_CHANGE_SEARCH, payload: event.target.value });
+    dispatch({ type: POST_CHANGE_SEARCH, payload: event.target.value });
   };
 
   useEffect(() => {

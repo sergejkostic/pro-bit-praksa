@@ -1,25 +1,28 @@
 import {
   SHOW_POST_MODAL,
-  TODO_CHANGE_SEARCH,
+  POST_CHANGE_SEARCH,
   USER_LOGOUT,
 } from "../actions/types";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { BASE } from "../utils";
 
 function Navbar() {
+  const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const searchInput = useSelector((state) => state.post.search);
   const searchRef = useRef(null);
   const updateSearch = (event) => {
     event.preventDefault();
-    dispatch({ type: TODO_CHANGE_SEARCH, payload: event.target.value });
+    dispatch({ type: POST_CHANGE_SEARCH, payload: event.target.value });
   };
 
   useEffect(() => {
-    searchRef.current.value = searchInput;
+    if (searchRef.current) {
+      searchRef.current.value = searchInput;
+    }
   }, []);
 
   return (
@@ -33,18 +36,23 @@ function Navbar() {
           Blog App
         </a>
         <form className="d-flex input-group w-auto">
-          <input
-            type="search"
-            className="form-control rounded"
-            placeholder="Search"
-            aria-label="Search"
-            aria-describedby="search-addon"
-            ref={searchRef}
-            onChange={(event) => updateSearch(event)}
-          />
-          <span className="input-group-text border-0" id="search-addon">
-            <i className="fas fa-search"></i>
-          </span>
+          {location?.pathname === BASE ? (
+            <>
+              <input
+                type="search"
+                className="form-control rounded"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search-addon"
+                ref={searchRef}
+                onChange={(event) => updateSearch(event)}
+              />
+              <span className="input-group-text border-0" id="search-addon">
+                <i className="fas fa-search"></i>
+              </span>
+            </>
+          ) : <></>}
+
           <button
             type="button"
             className="btn btn-primary me-3"
